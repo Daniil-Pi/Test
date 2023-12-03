@@ -23,3 +23,19 @@ int Count(string[] array)
     }
     return count;
 }
+
+string[] CreateNewArray(string[] array, int count)
+{
+    string[] NewArray = new string[count];
+    int k = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            NewArray[k] = array[i];
+            k++;
+        }
+    }
+    return NewArray;
+}
+
