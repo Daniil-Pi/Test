@@ -52,4 +52,9 @@ void PrintArray(string[] array)
     System.Console.Write("]");
 }
 
-
+Console.Write("Начальный массив: ");
+PrintArray(array);
+Console.WriteLine();
+string[] array2 = CreateNewArray(array, Count(array));
+Console.Write("Отсортированный массив: ");
+PrintArray(array2);
